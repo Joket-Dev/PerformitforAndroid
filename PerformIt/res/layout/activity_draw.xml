@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/home_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/home_button" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/home_imageView"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_draw"
+        android:orientation="vertical"
+        android:paddingBottom="5dp" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/up"
+            android:gravity="center_vertical" >
+
+            <ImageButton
+                android:id="@+id/left_scroll_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/left_scroll_arrow"
+                android:contentDescription="@string/modeLeftDescription" />
+
+            <HorizontalScrollView
+                android:id="@+id/HTScroll"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scrollbars="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical" >
+
+                    <ImageButton
+                        android:id="@+id/color_tool"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/color_selector" >
+                    </ImageButton>
+
+                    <ImageButton
+                        android:id="@+id/brush_tool"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/brush_selector" >
+                    </ImageButton>
+
+                    <ImageButton
+                        android:id="@+id/eraseBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/erase_button" >
+                    </ImageButton>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <ImageButton
+                android:id="@+id/right_scroll_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/right_scroll_arrow" />
+
+            <ImageButton
+                android:id="@+id/add_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/add_more_button" />
+        </LinearLayout>
+        
+        <com.llc.performit.draw.ComicEditor
+            android:id="@+id/editor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_above="@+id/share_layout" />
+
+        <LinearLayout
+            android:id="@+id/sub_tool_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/draw_popup_bg"
+            android:visibility="visible" >
+
+            <ImageButton
+                android:id="@+id/left_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/left_arrow"
+                android:contentDescription="@string/modeLeftDescription" />
+
+            <HorizontalScrollView
+                android:id="@+id/tool_scroll"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:scrollbars="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <ImageButton
+	                      android:id="@+id/circleBrush"
+	                      android:background="@drawable/circle_brush"
+	                      android:layout_width="wrap_content"
+	                      android:layout_height="wrap_content"   
+	                     ></ImageButton>
+	                   <ImageButton
+	                       android:id="@+id/squareBrush"
+	                      android:background="@drawable/square_brush"
+	                      android:layout_width="wrap_content"
+	                      android:layout_height="wrap_content"   
+	                     ></ImageButton>
+	                   <ImageButton
+	                       android:id="@+id/triangleBrush"
+	                      android:background="@drawable/triangle_brush"
+	                      android:layout_width="wrap_content"
+	                      android:layout_height="wrap_content"   
+	                     ></ImageButton>
+	                   <ImageButton
+	                       android:id="@+id/ovalBrush"
+	                      android:background="@drawable/oval_brush"
+	                      android:layout_width="wrap_content"
+	                      android:layout_height="wrap_content"   
+	                     ></ImageButton>
+	                   <ImageButton
+	                       android:id="@+id/arrowBrush"
+	                      android:background="@drawable/arrow_brush"
+	                      android:layout_width="wrap_content"
+	                      android:layout_height="wrap_content"   
+	                     ></ImageButton>
+	                   <ImageButton
+	                       android:id="@+id/crossBrush"
+	                      android:background="@drawable/cross_brush"
+	                      android:layout_width="wrap_content"
+	                      android:layout_height="wrap_content"   
+	                     ></ImageButton>
+	                   <ImageButton
+	                       android:id="@+id/hashtagBrush"
+	                      android:background="@drawable/hashtag_brush"
+	                      android:layout_width="wrap_content"
+	                      android:layout_height="wrap_content"   
+	                     ></ImageButton>
+	                   <ImageButton
+	                       android:id="@+id/heartBrush"
+	                      android:background="@drawable/heart_brush"
+	                      android:layout_width="wrap_content"
+	                      android:layout_height="wrap_content"   
+	                     ></ImageButton>
+	                   <ImageButton
+	                       android:id="@+id/moonBrush"
+	                      android:background="@drawable/moon_brush"
+	                      android:layout_width="wrap_content"
+	                      android:layout_height="wrap_content"   
+	                     ></ImageButton>
+	                   <ImageButton
+	                       android:id="@+id/quotationBrush"
+	                      android:background="@drawable/quotation_brush"
+	                      android:layout_width="wrap_content"
+	                      android:layout_height="wrap_content"   
+	                     ></ImageButton>
+	                   <ImageButton
+	                       android:id="@+id/starBrush"
+	                      android:background="@drawable/star_brush"
+	                      android:layout_width="wrap_content"
+	                      android:layout_height="wrap_content"   
+	                     ></ImageButton>
+	                  <ImageButton
+	                      android:id="@+id/peaceBrush"
+	                      android:background="@drawable/peace_brush"
+	                      android:layout_width="wrap_content"
+	                      android:layout_height="wrap_content"   
+	                     ></ImageButton>
+	                   <ImageButton
+	                       android:id="@+id/smileyBrush"
+	                      android:background="@drawable/smiley_brush"
+	                      android:layout_width="wrap_content"
+	                      android:layout_height="wrap_content"   
+	                     ></ImageButton>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <ImageButton
+                android:id="@+id/right_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/right_arrow"
+                android:contentDescription="@string/modeLeftDescription" />
+
+            <SeekBar
+                android:id="@+id/strokeBar"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:max="10" />
+
+            <ImageButton
+                android:id="@+id/selectedtool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle_brush_preview"
+                android:visibility="gone" >
+            </ImageButton>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sub_color_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/draw_popup_bg"
+            android:visibility="gone" >
+
+            <ImageButton
+                android:id="@+id/color_left_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_vertical"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/left_arrow"
+                android:contentDescription="@string/modeLeftDescription" />
+
+            <HorizontalScrollView
+                android:id="@+id/color_scrollView"
+                android:layout_width="230dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:scrollbars="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/color_layout"
+                    android:layout_width="230dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical" >
+
+                    <!--  <Button
+                        android:id="@+id/color6"
+                        android:layout_width="35dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/colorbtn6" />
+
+                   <Button
+                        android:id="@+id/color3"
+                        android:layout_width="35dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/colorbtn3" />
+
+                    <Button
+                        android:id="@+id/color1"
+                        android:layout_width="35dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/colorbtn1" />
+
+                    <Button
+                        android:id="@+id/color11"
+                        android:layout_width="35dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/colorbtn11" />
+
+                    <Button
+                        android:id="@+id/color10"
+                        android:layout_width="35dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/colorbtn10" />
+
+                    <Button
+                        android:id="@+id/color4"
+                        android:layout_width="35dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/colorbtn4" /> -->
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <ImageButton
+                android:id="@+id/color_right_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_vertical"
+                android:background="@drawable/right_arrow"
+                android:contentDescription="@string/modeLeftDescription" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/share_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/down"
+            android:gravity="center" >
+
+            <ImageButton
+                android:id="@+id/undoBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:background="@drawable/undo_button" />
+
+            <ImageButton
+                android:id="@+id/clearBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:background="@drawable/clear_button" />
+
+            <ImageButton
+                android:id="@+id/saveBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/save_button" />
+
+            <ImageButton
+                android:id="@+id/shareBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:background="@drawable/share_button" />
+
+            <ImageButton
+                android:id="@+id/sendBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:background="@drawable/send_button" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp" >
+
+        <RelativeLayout
+            android:id="@+id/left_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5" 
+            android:layout_margin="3dp"
+            android:background="@drawable/achievement_bg" >
+
+            <ImageView
+                android:id="@+id/l_type_imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/achievement_3" />
+
+            <TextView
+                android:id="@+id/l_achieved_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/black"
+                android:text="30/30" />
+
+            <ImageView
+                android:id="@+id/l_achieved_imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/achieved" />
+            
+            <TextView
+                android:id="@+id/l_name_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:text="Recording Man" />
+
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/right_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:layout_margin="3dp"
+            android:background="@drawable/achievement_bg" >
+            
+            <ImageView
+                android:id="@+id/r_type_imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/achievement_2" />
+
+            <TextView
+                android:id="@+id/r_achieved_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/black"
+                android:text="30/30" />
+
+            <ImageView
+                android:id="@+id/r_achieved_imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/achieved" />
+            
+            <TextView
+                android:id="@+id/r_name_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:text="Recording Man" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

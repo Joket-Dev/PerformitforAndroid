@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/home_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/home_button" />
+
+    <RelativeLayout
+        android:id="@+id/body_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/home_imageView"
+        android:layout_margin="15dp"
+        android:background="@drawable/blue_record_audio"
+        android:orientation="vertical"
+        android:paddingBottom="5dp" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/up" >
+
+            <ImageView
+                android:id="@+id/play_pause_imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/record_button" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:max="100" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/record_layout"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_above="@+id/share_layout"
+            android:orientation="vertical"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:id="@+id/record_layout"
+                android:layout_width="200dp"
+                android:layout_height="0dp"
+                android:layout_weight="0.5" >
+
+                <ImageView
+                    android:id="@+id/record_state_imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/record_label_textView"
+                    android:src="@drawable/record_icon_on" />
+
+                <TextView
+                    android:id="@+id/record_label_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Record"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/word_textView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="Word"
+                android:textSize="18dp"
+                android:textColor="@color/dark_gray" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/share_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/down" >
+
+            <ImageView
+                android:id="@+id/send_imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/send_button" />
+
+            <ImageView
+                android:id="@+id/share_imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/send_imageView"
+                android:src="@drawable/share_button" />
+
+            <ImageView
+                android:id="@+id/save_imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/share_imageView"
+                android:src="@drawable/save_button" />
+
+            <LinearLayout
+                android:id="@+id/coins_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/coins_label_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Coins:"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/small_coin_icon" />
+
+                <TextView
+                    android:id="@+id/coins_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="500"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/sound_effects_mageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/sound_effects_button" />
+        
+        <LinearLayout 
+            android:id="@+id/share_item_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/share_popup_a"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/share_label_textView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.4"
+                android:text="Share With"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:gravity="center"/>
+            
+            <RelativeLayout 
+	            android:layout_width="250dp"
+	            android:layout_height="0dp"
+	            android:layout_weight="0.6"
+	            android:background="@drawable/share_popup_b"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginRight="10dp"
+	            android:layout_marginBottom="10dp" >
+                
+                <ImageView
+	                android:id="@+id/left_scroll_arrow"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_centerVertical="true"
+	                android:background="@drawable/left_scroll_arrow" />
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScrollView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/left_scroll_arrow"
+                    android:layout_toLeftOf="@+id/right_scroll_arrow" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+                        
+                        <ImageView
+			                android:id="@+id/facebook_iamgeView"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_centerVertical="true"
+			                android:background="@drawable/facebook_share_button" />
+                        
+                        <ImageView
+			                android:id="@+id/twitter_iamgeView"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_centerVertical="true"
+			                android:layout_marginLeft="10dp"
+			                android:background="@drawable/twitter_share_button" />
+		                        
+                    </LinearLayout>
+                </HorizontalScrollView>
+                
+                <ImageView
+	                android:id="@+id/right_scroll_arrow"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_centerVertical="true"
+	                android:layout_alignParentRight="true"
+	                android:background="@drawable/right_scroll_arrow" />
+                
+            </RelativeLayout>
+            
+        </LinearLayout>
+        
+    </RelativeLayout>
+
+</RelativeLayout>

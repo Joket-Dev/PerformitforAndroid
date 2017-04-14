@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.llc.performit"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+	<uses-feature android:name="android.hardware.camera" />
+	<uses-feature android:name="android.hardware.camera.autofocus" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission android:name="com.android.vending.BILLING" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.llc.performit.SplashActivity"
+            android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.llc.performit.LoginActivity"
+            android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:name="com.llc.performit.LoginPopupActivity"
+            android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:name="com.llc.performit.HomeActivity"
+            android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:name="com.llc.performit.ConfirmBuyCoinActivity"
+            android:label="@string/app_name" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:name="com.llc.performit.SettingsActivity"
+            android:label="@string/app_name" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:name="com.llc.performit.AboutActivity"
+            android:label="@string/app_name" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:name="com.llc.performit.NewGameActivity"
+            android:label="@string/app_name" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:name="com.llc.performit.AchievementsActivity"
+            android:label="@string/app_name" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:name="com.llc.performit.CompleteAchievementActivity"
+            android:label="@string/app_name" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:name="com.llc.performit.UncompleteAchievementActivity"
+            android:label="@string/app_name" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:name="com.llc.performit.GameTypeActivity"
+            android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:name="com.llc.performit.BubblesPopupActivity"
+            android:label="@string/app_name" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:name="com.llc.performit.LeaderboardActivity"
+            android:label="@string/app_name" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:name="com.llc.performit.RecordAudioActivity"
+            android:label="@string/app_name" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:name="com.llc.performit.SoundEffectsActivity"
+            android:label="@string/app_name" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:name="com.llc.performit.RecordVideoActivity"
+            android:label="@string/app_name" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:name="com.llc.performit.GamePlayActivity"
+            android:label="@string/app_name" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:name="com.llc.performit.DrawActivity"
+            android:label="@string/app_name" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:name="com.llc.performit.CoinActivity"
+            android:label="@string/app_name" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:name="com.llc.performit.AddMoreDrawItemActivity"
+            android:label="@string/app_name" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:name="com.llc.performit.AddMorePlayItemActivity"
+            android:label="@string/app_name" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:screenOrientation="portrait">
+        </activity>
+        
+    </application>
+
+</manifest>

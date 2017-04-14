@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/category_textView"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="MyTurn"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/your_turn_header" />
+
+    <RelativeLayout
+        android:id="@+id/info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/game_cell_bg" >
+
+        <ImageView
+            android:id="@+id/picture_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/opponent_no_image"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/name_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/picture_imageView"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:text="Username" />
+        
+        <TextView
+            android:id="@+id/round_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/arrow_imageView"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_gray"
+            android:text="0" />
+        
+        <ImageView
+            android:id="@+id/arrow_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/right_arrow"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

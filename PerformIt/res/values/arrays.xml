@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <array name="material_colors">
+        <item>#fe103d</item>
+        <item>#fb10fe</item>
+        <item>#5e10fe</item>
+        <item>#108bfe</item>
+        <item>#30f7f0</item>
+        <item>#19f777</item>
+        <item>#19f71e</item>
+        <item>#eaf719</item>
+        <item>#f75319</item>
+    </array>
+</resources>

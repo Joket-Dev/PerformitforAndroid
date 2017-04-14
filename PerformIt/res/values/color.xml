@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="dark_gray">#7f7f7f</color>
+    <color name="dlg_button_color">#12547a</color>
+    <color name="transparent_color">#99000000</color>
+    <color name="achieve_name_color">#8d12a8</color>
+    <color name="transparent">#11000000</color>
+    
+    <color name="colorPrimary">#FF3F51B5</color>
+    <color name="colorPrimaryDark">#FF303F9F</color>
+    <color name="colorAccent">#FFFF4081</color>
+</resources>

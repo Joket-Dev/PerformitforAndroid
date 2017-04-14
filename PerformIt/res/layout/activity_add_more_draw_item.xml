@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/transparent"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="350dp"
+        android:background="@drawable/sound_efects_popup" >
+
+        <ImageView
+            android:id="@+id/close_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/popup_close_button" />
+
+        <TextView
+            android:id="@+id/title_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/close_imageView"
+            android:layout_centerHorizontal="true"
+            android:text="In-App Purchases"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/title_textView"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/all_pattern_label_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="All Patterns"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" >
+
+                        <HorizontalScrollView
+                            android:id="@+id/horizontalScrollView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toLeftOf="@+id/all_pattern_purchase_imageView"
+                            android:layout_marginRight="5dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/colors_bg" >
+
+                            <LinearLayout
+                                android:id="@+id/all_pattern_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:gravity="center_vertical" >
+
+                            </LinearLayout>
+                        </HorizontalScrollView>
+
+                        <ImageView
+                            android:id="@+id/all_pattern_purchase_imageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/purchase_button" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp" >
+
+                    <TextView
+                        android:id="@+id/simple_pattern_label_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Simple Patterns"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" >
+
+                        <HorizontalScrollView
+                            android:id="@+id/horizontalScrollView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toLeftOf="@+id/simple_pattern_purchase_imageView"
+                            android:layout_marginRight="5dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/colors_bg" >
+
+                            <LinearLayout
+                                android:id="@+id/simple_pattern_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:gravity="center_vertical" >
+
+                            </LinearLayout>
+                        </HorizontalScrollView>
+
+                        <ImageView
+                            android:id="@+id/simple_pattern_purchase_imageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/purchase_button" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp" >
+
+                    <TextView
+                        android:id="@+id/simple_color_label_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Simple Colors"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" >
+
+                        <HorizontalScrollView
+                            android:id="@+id/horizontalScrollView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toLeftOf="@+id/simple_color_purchase_imageView"
+                            android:layout_marginRight="5dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/colors_bg" >
+
+                            <LinearLayout
+                                android:id="@+id/simple_color_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:gravity="center_vertical" >
+
+                            </LinearLayout>
+                        </HorizontalScrollView>
+
+                        <ImageView
+                            android:id="@+id/simple_color_purchase_imageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/purchase_button" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp" >
+
+                    <TextView
+                        android:id="@+id/all_color_label_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="All Colors"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" >
+
+                        <HorizontalScrollView
+                            android:id="@+id/horizontalScrollView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toLeftOf="@+id/all_color_purchase_imageView"
+                            android:layout_marginRight="5dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/colors_bg" >
+
+                            <LinearLayout
+                                android:id="@+id/all_color_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:gravity="center_vertical" >
+
+                            </LinearLayout>
+                        </HorizontalScrollView>
+
+                        <ImageView
+                            android:id="@+id/all_color_purchase_imageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/purchase_button" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp" >
+
+                    <TextView
+                        android:id="@+id/special_brush_label_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Special Brush"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" >
+
+                        <HorizontalScrollView
+                            android:id="@+id/horizontalScrollView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toLeftOf="@+id/special_brush_purchase_imageView"
+                            android:layout_marginRight="5dp"
+                            android:layout_centerVertical="true" >
+
+                            <LinearLayout
+                                android:id="@+id/special_brush_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:layout_marginLeft="15dp" >
+
+
+                                    <ImageView
+                                        android:id="@+id/imageView1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/background_color" />
+
+
+                            </LinearLayout>
+                        </HorizontalScrollView>
+
+                        <ImageView
+                            android:id="@+id/special_brush_purchase_imageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/purchase_button" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</LinearLayout>

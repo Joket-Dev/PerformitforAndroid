@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="350dp"
+        android:background="@drawable/sound_efects_popup" >
+
+        <ImageView
+            android:id="@+id/close_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/popup_close_button" />
+
+        <TextView
+            android:id="@+id/title_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/close_imageView"
+            android:layout_centerHorizontal="true"
+            android:text="Purchases Items"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/title_textView"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp" >
+                    
+                    <ImageView
+                        android:id="@+id/hint_purchase_imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/give_hint" />
+                    
+                    <TextView
+                        android:id="@+id/hint_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/hint_purchase_imageView"
+                        android:text="Get Hint"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+                        android:gravity="center_vertical" />
+
+                    <ImageView
+                        android:id="@+id/btn_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/purchase_button" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp" >
+                    
+                    <ImageView
+                        android:id="@+id/min_2_purchase_imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/minutes_2_timer" />
+                    
+                    <TextView
+                        android:id="@+id/min_2_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@+id/min_2_purchase_imageView"
+                        android:text="Time +2Mins"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+                        android:gravity="center_vertical" />
+
+                    <ImageView
+                        android:id="@+id/btn_2_min"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/purchase_button" />
+                </RelativeLayout>
+                
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp" >
+                    
+                    <ImageView
+                        android:id="@+id/min_5_purchase_imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/minutes_5_timer" />
+                    
+                    <TextView
+                        android:id="@+id/min_5_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@+id/min_5_purchase_imageView"
+                        android:text="Time +5Mins"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+                        android:gravity="center_vertical" />
+
+                    <ImageView
+                        android:id="@+id/btn_5_min"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/purchase_button" />
+                </RelativeLayout>
+                
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp" >
+                    
+                    <ImageView
+                        android:id="@+id/infinite_purchase_imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/infinite_timer" />
+                    
+                    <TextView
+                        android:id="@+id/infinite_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@+id/infinite_purchase_imageView"
+                        android:text="Time Infinite"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+                        android:gravity="center_vertical" />
+
+                    <ImageView
+                        android:id="@+id/btn_infinite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/purchase_button" />
+                </RelativeLayout>
+                
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp" >
+                    
+                    <ImageView
+                        android:id="@+id/stop_purchase_imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/stop_timer" />
+                    
+                    <TextView
+                        android:id="@+id/stop_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@+id/stop_purchase_imageView"
+                        android:text="Stop Time"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+                        android:gravity="center_vertical" />
+
+                    <ImageView
+                        android:id="@+id/btn_stop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/purchase_button" />
+                </RelativeLayout>
+                
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>
